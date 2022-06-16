@@ -62,7 +62,7 @@
 
 ![image](https://user-images.githubusercontent.com/103306835/174041171-d653a14a-d0b1-4ee1-b127-0730aed96338.png)
 
-4.點選[上傳]
+4.點選[上傳](連結：)
 
 ![image](https://user-images.githubusercontent.com/103306835/174041215-34e5373e-637d-4af4-aedc-14f05a5c6587.png)
 
