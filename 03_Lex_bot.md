@@ -246,7 +246,7 @@ EXPENSE REPORT AREPORT NUMBER: 35678-9Expense ReportExpense DescriptionTypeDateM
 
 ![image](https://user-images.githubusercontent.com/103306835/174052064-dbf6d8cb-4958-47cb-8ed4-f4f53a47c9a9.png)
 
-5.點選[Import]
+5.點選[Import] (檔案位置：https://fcu-labk.s3.amazonaws.com/InvoiceBot.zip)
 
 ![image](https://user-images.githubusercontent.com/103306835/174052154-6994cc3b-ed7f-4f38-bfe8-79b451932e05.png)
 
