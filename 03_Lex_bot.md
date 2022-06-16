@@ -1,6 +1,6 @@
 # 機器學習、運算與辨識服務應用
 
-# 使用環境：
+# 使用環境：AWS Academy Learner Lab
 
 # 情境
 
