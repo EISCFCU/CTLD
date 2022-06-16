@@ -170,5 +170,37 @@
 
 ![image](https://user-images.githubusercontent.com/103306835/174044476-87b7a8f4-8676-4137-b808-b883165c9b13.png)
 
-5.
+5.TXT裡面的資料
+
+EXPENSE REPORT AREPORT NUMBER: 35678-9Expense ReportExpense DescriptionTypeDateMerchant NameAmount (USD)Furniture (Desks andOffice Supplies5/10/1019Merchant One1500.00Chairs)Team LunchFood5/11/2019Merchant Two100.00Team DinnerFood5/12/2019Merchant Three300.00LaptopOffice Supplies5/13/2019Merchant Three200.00Total2100.00
+
+
+# 步驟5：建立第二個Lambda
+
+1.點選[函數]
+
+![image](https://user-images.githubusercontent.com/103306835/174045013-df408e01-74b8-4684-875a-a641bcb3c54d.png)
+
+2.點選[建立函式]
+
+![image](https://user-images.githubusercontent.com/103306835/174045055-c314ac8f-b9ca-47bc-8e1b-b1db4cf13855.png)
+
+3.輸入函數名稱：lexbot
+
+![image](https://user-images.githubusercontent.com/103306835/174045268-a8d5f5d6-e683-4d10-be7e-8dfe03406e7b.png)
+
+4.選擇Runtime：Python3.8
+
+![image](https://user-images.githubusercontent.com/103306835/174045322-ca63151f-d563-419c-ba1a-26881897b1b9.png)
+
+5.點選變更執行角色
+
+![image](https://user-images.githubusercontent.com/103306835/174045386-c3337628-990c-4689-bff6-919c2186ddeb.png)
+
+6.選擇LabRole
+
+![image](https://user-images.githubusercontent.com/103306835/174045424-78b255be-b719-4ef8-b9cd-02a3b937846c.png)
+
+7.點選[建立函式]
+
 
