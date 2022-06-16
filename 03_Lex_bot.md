@@ -9,7 +9,7 @@
 
 # 實施架構
 
-![image](https://user-images.githubusercontent.com/103306835/174040053-355481b3-5654-4c3b-b23e-ff44f14e2cd7.png)
+![image](https://user-images.githubusercontent.com/103306835/174056166-4967cea2-7fa3-4169-aec7-60bcb7802a27.png)
 
 
 # 發票資料
@@ -128,7 +128,7 @@
 
 ![image](https://user-images.githubusercontent.com/103306835/174043518-ce25e2c7-1abc-4429-a099-406efc6c063d.png)
 
-14.貼上S3 URL
+14.貼上S3 URL (連結：https://fcu-labk.s3.amazonaws.com/getTextFromImage0616-521779d0-b365-4f9c-a004-f733e842b243.zip)
 
 ![image](https://user-images.githubusercontent.com/103306835/174043586-a11886dc-767e-4f17-adeb-f5d5d161fb3d.png)
 
@@ -202,4 +202,101 @@ EXPENSE REPORT AREPORT NUMBER: 35678-9Expense ReportExpense DescriptionTypeDateM
 ![image](https://user-images.githubusercontent.com/103306835/174045424-78b255be-b719-4ef8-b9cd-02a3b937846c.png)
 
 7.點選[建立函式]
+
+![image](https://user-images.githubusercontent.com/103306835/174051606-b2b3198d-1f0c-47b1-ba18-e8f4fc28feca.png)
+
+8.點選[上傳於]
+
+![image](https://user-images.githubusercontent.com/103306835/174051643-8722bc02-e980-4ca6-b459-1b580c96cf22.png)
+
+9.點選[Amazon S3 位置]
+
+![image](https://user-images.githubusercontent.com/103306835/174051719-e9c415d3-67b8-4262-8504-71ec7a6e83ff.png)
+
+10.貼上S3連結並儲存(連結：https://fcu-labk.s3.amazonaws.com/lexbot-ddffea3c-56ac-4461-aed4-85f66f310b2e.zip)
+
+![image](https://user-images.githubusercontent.com/103306835/174051775-3f2a002f-dca3-4786-bd1c-db0601118331.png)
+
+11.修改bucket 名稱
+
+![image](https://user-images.githubusercontent.com/103306835/174051810-98669049-2d6d-4573-992d-33fb279d45e9.png)
+
+12.點選[Deploy]
+
+![image](https://user-images.githubusercontent.com/103306835/174051842-e7c24b53-d624-402e-ad7b-21aace104fe7.png)
+
+
+# 步驟6：建立機器人
+
+1.搜尋Lex
+
+![image](https://user-images.githubusercontent.com/103306835/174051955-3b842eee-28b5-495e-ad69-c4fdfd9ff3b4.png)
+
+2.點選Lex
+
+![image](https://user-images.githubusercontent.com/103306835/174051994-8d5ed31b-eb6e-41b5-8aad-36082c7ba47b.png)
+
+3.點選[返回V1主控台]
+
+![image](https://user-images.githubusercontent.com/103306835/174052029-c8a1b8af-b504-4bcd-ae73-c81c461fd8b7.png)
+
+4.點選[Action]
+
+![image](https://user-images.githubusercontent.com/103306835/174052064-dbf6d8cb-4958-47cb-8ed4-f4f53a47c9a9.png)
+
+5.點選[Import]
+
+![image](https://user-images.githubusercontent.com/103306835/174052154-6994cc3b-ed7f-4f38-bfe8-79b451932e05.png)
+
+6.點選[Browse]
+
+![image](https://user-images.githubusercontent.com/103306835/174052937-b213b876-b08d-4891-9627-67fdb7f47935.png)
+
+7.點選[Import]
+
+![image](https://user-images.githubusercontent.com/103306835/174052971-984dd320-8416-4fb5-a677-53c19e36cbe2.png)
+
+8.點選Bot
+
+![image](https://user-images.githubusercontent.com/103306835/174053013-ddd5fe2a-a60d-4d50-82c5-2cefd566e79a.png)
+
+9.點選第一個Intents
+
+![image](https://user-images.githubusercontent.com/103306835/174053042-4dfa8c83-eb65-45a4-adfc-d7370d251d45.png)
+
+10.選擇AWS Lambda function
+
+![image](https://user-images.githubusercontent.com/103306835/174053086-47f9312b-545c-47cc-ae52-4bde69c86cde.png)
+
+11.選擇第二個Lambda
+
+![image](https://user-images.githubusercontent.com/103306835/174053191-0a4ae7bd-18f9-4d6b-b433-a568c7fad6ad.png
+
+12.點選OK
+
+![image](https://user-images.githubusercontent.com/103306835/174053224-7a2385f8-7e5b-4685-bcf6-5b602c5e12d0.png)
+
+13.點選[Save Intent]
+
+![image](https://user-images.githubusercontent.com/103306835/174053257-79e24521-2219-4458-8278-9a75b191da21.png)
+
+14.點選[Build]
+
+![image](https://user-images.githubusercontent.com/103306835/174053288-269e15c9-039d-47b4-95ba-de1e9dd4f242.png)
+
+15.依序將GetInvoiceDetails、 GetInvoiceNotes意圖連結Lambda
+
+GetInvoiceSummary – 用户请求查看发票摘要时所调用的意图。由Lambda函数完成，可返回当前可用发票的数量与发票总金额。
+GetInvoiceDetails – 用户请求查看发票明细时所调用的意图。可通过Lambda函数实现，用于提供发票各条目明细，包括日期、数量与条目明细。
+GetInvoiceNotes – 用户请求查看发票注释时所调用的意图。通过Lambda函数完成，提供带有日期与项目描述的发票注释信息。
+
+# 步驟7：測試
+
+1.輸入問題
+
+![image](https://user-images.githubusercontent.com/103306835/174053478-4a62df8b-0a01-4fb8-a3d1-938de65ec154.png)
+
+2.結果顯示
+
+![image](https://user-images.githubusercontent.com/103306835/174053544-7120dfd8-546c-4bfe-90a9-3e1ee5c4cbce.png)
 
