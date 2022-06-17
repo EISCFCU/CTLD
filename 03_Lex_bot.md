@@ -50,7 +50,10 @@
 
 ![image](https://user-images.githubusercontent.com/103306835/174040933-a5f3c305-0424-43af-9c82-5ec5d92b611d.png)
 
-# 步驟2：上傳資料
+
+# 重複此動作建立第二個S3
+
+# 步驟2：上傳資料到第一個S3
 
 1.點選儲存貯體
 
@@ -130,7 +133,7 @@
 
 ![image](https://user-images.githubusercontent.com/103306835/174043518-ce25e2c7-1abc-4429-a099-406efc6c063d.png)
 
-14.貼上S3 URL (連結：https://fcu-labk.s3.amazonaws.com/getTextFromImage0616-521779d0-b365-4f9c-a004-f733e842b243.zip)
+14.貼上S3 URL (連結：https://fcu-labk.s3.amazonaws.com/l1-17196916-03bf-4324-8bae-1887ba1f90c4.zip)
 
 ![image](https://user-images.githubusercontent.com/103306835/174043586-a11886dc-767e-4f17-adeb-f5d5d161fb3d.png)
 
@@ -138,19 +141,28 @@
 
 ![image](https://user-images.githubusercontent.com/103306835/174043627-e69da247-7571-4e8d-b95b-6bf0dbc1ae54.png)
 
-16.點選[TEST]
+16.更改outputbucketname為第二個Bucketname
+
+![image](https://user-images.githubusercontent.com/103306835/174213765-171e4755-409b-4138-acef-e2774931067a.png)
+
+17.點選[Deploy]
+
+![image](https://user-images.githubusercontent.com/103306835/174213785-ccae7498-2b43-41f7-bd5f-2b57e21ef75f.png)
+
+
+18.點選[TEST]
 
 ![image](https://user-images.githubusercontent.com/103306835/174043683-396341d7-be41-42af-8974-015f3dd92bae.png)
 
-17.輸入事件名稱：test
+19.輸入事件名稱：test
 
 ![image](https://user-images.githubusercontent.com/103306835/174044089-a45ff965-77b5-487a-9959-2e819d2b0b23.png)
 
-18.修改成自己的S3跟照片名稱
+20.修改成自己第一個s3跟照片名稱
 
 ![image](https://user-images.githubusercontent.com/103306835/174044144-90744b47-3eed-46b1-a793-adb268b5ed36.png)
 
-19.點選[儲存]
+21.點選[儲存]
 
 ![image](https://user-images.githubusercontent.com/103306835/174044209-a8bc1b8f-a3dc-4bd9-a3be-48173d0a92cc.png)
 
@@ -164,13 +176,14 @@
 
 ![image](https://user-images.githubusercontent.com/103306835/174044392-035cbd9c-b0bb-42bf-a27f-ee51e40935fd.png)
 
-3.回到S3 點選[更新]
+3.回到第二個S3 點選[更新]
 
-![image](https://user-images.githubusercontent.com/103306835/174044427-83a00504-c912-431a-985d-6b7bec147d63.png)
+![image](https://user-images.githubusercontent.com/103306835/174213908-bb3f78ed-217a-4a1e-83d9-9d595a688b5c.png)
 
-4.產生TXT
 
-![image](https://user-images.githubusercontent.com/103306835/174044476-87b7a8f4-8676-4137-b808-b883165c9b13.png)
+4.產生TXT(一筆資料)
+
+![image](https://user-images.githubusercontent.com/103306835/174213925-f53a16e2-b997-4509-9ec6-546814949402.png)
 
 5.TXT裡面的資料
 
@@ -219,7 +232,7 @@ EXPENSE REPORT AREPORT NUMBER: 35678-9Expense ReportExpense DescriptionTypeDateM
 
 ![image](https://user-images.githubusercontent.com/103306835/174051775-3f2a002f-dca3-4786-bd1c-db0601118331.png)
 
-11.修改bucket 名稱
+11.修改bucket 名稱為第二個bucketname
 
 ![image](https://user-images.githubusercontent.com/103306835/174051810-98669049-2d6d-4573-992d-33fb279d45e9.png)
 
@@ -288,17 +301,29 @@ EXPENSE REPORT AREPORT NUMBER: 35678-9Expense ReportExpense DescriptionTypeDateM
 
 15.依序將GetInvoiceDetails、 GetInvoiceNotes意圖連結Lambda
 
-GetInvoiceSummary – 用户请求查看发票摘要时所调用的意图。由Lambda函数完成，可返回当前可用发票的数量与发票总金额。
-GetInvoiceDetails – 用户请求查看发票明细时所调用的意图。可通过Lambda函数实现，用于提供发票各条目明细，包括日期、数量与条目明细。
-GetInvoiceNotes – 用户请求查看发票注释时所调用的意图。通过Lambda函数完成，提供带有日期与项目描述的发票注释信息。
+GetInvoiceSummary – 用戶請求查看發票摘要時所調用的意圖。由Lambda函數完成，可返回當前可用發票的數量與發票總金額。
+GetInvoiceDetails – 用戶請求查看發票明細時所調用的意圖。可通過Lambda函數實現，用於提供發票各條目明細，包括日期、數量與條目明細。
+GetInvoiceNotes – 用戶請求查看發票注釋時所調用的意圖。通過Lambda函數完成，提供帶有日期與專案描述的發票注釋資訊。
+
+
 
 # 步驟7：測試
 
-1.輸入問題
+1.點選[Test Chatbot]
+
+![image](https://user-images.githubusercontent.com/103306835/174214072-f9f8c7d1-feb3-430d-bd1d-27715fad9a92.png)
+
+
+2.輸入問題
 
 ![image](https://user-images.githubusercontent.com/103306835/174053478-4a62df8b-0a01-4fb8-a3d1-938de65ec154.png)
 
-2.結果顯示
+3.結果顯示
 
 ![image](https://user-images.githubusercontent.com/103306835/174053544-7120dfd8-546c-4bfe-90a9-3e1ee5c4cbce.png)
 
+
+參考資料：
+
+1.https://aws.amazon.com/tw/blogs/machine-learning/deriving-conversational-insights-from-invoices-with-amazon-textract-amazon-comprehend-and-amazon-lex/
+2.https://medium.com/@sumindaniro/aws-textract-with-lambda-walkthrough-ed4473aedd9d
